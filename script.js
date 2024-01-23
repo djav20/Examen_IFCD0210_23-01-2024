@@ -32,9 +32,9 @@ function media(arr) {
 
 // Funcion principal para ejecutar
 function main(){
-    var n1 = parseInt(prompt("Introduzca el primer número"));
-    var n2 = parseInt(prompt("Introduzca el segundo número"));
-    var n3 = parseInt(prompt("Introduzca el tercer número"));
+    var n1 = parseInt(document.getElementById("num1").value);
+    var n2 = parseInt(document.getElementById("num2").value);
+    var n3 = parseInt(document.getElementById("num3").value);
 
     // a. Si son todos diferentes, se chequea con condiciones y if else para los prompts de respuesta.
     if((n1 != n2) && (n1 != n3) && (n2 != n3)){
@@ -61,4 +61,4 @@ function main(){
     alert("La media es: " + media(arr));   
 }
 
-main();
+// main();
